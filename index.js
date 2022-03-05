@@ -262,20 +262,12 @@ const leavePrompt = () => {
     })
 }
 
-//
+// call function
 teamGeneratorQuestions()
-    // .then(teamData => {
 
-  
-    // })
 // on the html page
 // 1
 // when clicking an email address then default email program opens (outlook, mail, etc.) 
-// and the email has to pupolate in the TO: field the email address that was clicked 
+// and the email has to populate in the TO: field the email address that was clicked 
 // 2
-// when clicking the HitHub username the profile opens in a new tab
-
-//TESTS
-// const fs = require('fs');
-// jest.mock('fs');
-// fs.readFileSync.mockReturnValue('fake content');
+// when clicking the GitHub username the profile opens in a new tab

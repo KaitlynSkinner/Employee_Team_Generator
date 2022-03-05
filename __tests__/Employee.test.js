@@ -5,42 +5,28 @@ const Employee = require('../lib/Employee.js');
 
 describe('get the information of the team employee', () => {
     test('creates an employee object', () => {
-        const employee = new Employee('Name', 'Role', 1, 'email@email.com', 1234567);
+        const employee = new Employee('Name', 1, 'email@email.com');
     
         expect(employee.name).toBe('Name');
-        expect(employee.role).toBe('Role');
         expect(employee.id).toEqual(expect.any(Number));
         expect(employee.email).toBe('email@email.com');
-        expect(employee.phone).toEqual(expect.any(Number));
     });
 
-    test('add employee name', () => {
-        const employee = new Employee('Name', 'Role', 1, 'email@email.com', 1234567);
+    test('get employee name', () => {
+        const employee = new Employee('Name', 1, 'email@email.com', 'role');
     
         expect(employee.name).toBe('Name');
     });
 
-    test('add employee role', () => {
-        const employee = new Employee('Name', 'Role', 1, 'email@email.com', 1234567);
-    
-        expect(employee.role).toBe('Role');
-    });
-
-    test('add employee employee id', () => {
-        const employee = new Employee('Name', 'Role', 1, 'email@email.com', 1234567);
+    test('get employee employee id', () => {
+        const employee = new Employee('Name', 1, 'email@email.com', 'role');
 
         expect(employee.id).toEqual(expect.any(Number));
     });
 
-    test('add employee email', () => {
-        const employee = new Employee('Name', 'Role', 1, 'email@email.com', 1234567);
+    test('get employee email', () => {
+        const employee = new Employee('Name', 1, 'email@email.com', 2);
     
         expect(employee.email).toBe('email@email.com');
-    });
-
-    test('add work phone number', () => {
-        const employee = new Employee('Name', 'Role', 1, 'email@email.com', 1234567);
-    
-        expect(employee.phone).toEqual(expect.any(Number));
     });
 });

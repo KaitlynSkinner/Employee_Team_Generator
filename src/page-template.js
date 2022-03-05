@@ -1,3 +1,28 @@
+const generateManagers = (managers) => {
+    let managerTemplate = managers.map(manager => {
+        return `
+        <!-- Team Cards -->
+        <div id="m-t" class="column">
+            <div class="card">
+            <div class="card-section">
+                <h4><strong>${manager.name}</strong></h4>
+                <p>${manager.getRole()}</p>
+            </div>
+            <div class="card-divider">
+                <ul class="menu">
+                    <li>Employee ID:<span>${manager.id}</span></li>
+                    <li>Email:<span>${manager.email}</span></li>
+                    <li>GitHub Username:<span>${manager.officeNumber}</span></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        `;
+    })
+    console.log(managerTemplate);
+    return managerTemplate.join("");
+}
+
 const generateEngineers = (engineers) => {
     let engineerTemplate = engineers.map(engineer => {
         return `
@@ -23,6 +48,31 @@ const generateEngineers = (engineers) => {
     return engineerTemplate.join("");
 }
 
+const generateInterns = (interns) => {
+    let internTemplate = interns.map(intern => {
+        return `
+        <!-- Team Cards -->
+        <div id="m-t" class="column">
+            <div class="card">
+            <div class="card-section">
+                <h4><strong>${intern.name}</strong></h4>
+                <p>${intern.getRole()}</p>
+            </div>
+            <div class="card-divider">
+                <ul class="menu">
+                    <li>Employee ID:<span>${intern.id}</span></li>
+                    <li>Email:<span>${intern.email}</span></li>
+                    <li>GitHub Username:<span>${intern.school}</span></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        `;
+    })
+    console.log(internTamplate);
+    return internTemplate.join("");
+}
+
 const generateHtml = (managers, engineers, interns) => {
     return `
     <!DOCTYPE html>
@@ -44,7 +94,9 @@ const generateHtml = (managers, engineers, interns) => {
         </header>
     
         <main>
-           ${generateEngineers(engineers)}
+            ${generateManagers(managers)}
+            ${generateEngineers(engineers)}
+            ${generateInterns(interns)}
         </main>
     
     <!-- Compressed Foundation JavaScript -->

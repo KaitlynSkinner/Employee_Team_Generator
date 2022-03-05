@@ -5,41 +5,34 @@ const Intern = require('../lib/Intern.js');
 
 describe('get the information of the team intern', () => {
     test('creates an intern object', () => {
-        const intern = new Intern('Name', 'Role', 1, 'email@email.com', 'School');
+        const intern = new Intern('Name', 1, 'email@email.com', 'School');
     
         expect(intern.name).toBe('Name');
-        expect(intern.role).toBe('Role');
         expect(intern.id).toEqual(expect.any(Number));
         expect(intern.email).toBe('email@email.com');
         expect(intern.school).toBe('School');
     });
 
     test('add intern name', () => {
-        const intern = new Intern('Name', 'Role', 1, 'email@email.com', 'School');
+        const intern = new Intern('Name', 1, 'email@email.com', 'School');
     
         expect(intern.name).toBe('Name');
     });
 
-    test("add intern's role", () => {
-        const intern = new Intern('Name', 'Role', 1, 'email@email.com', 'School');
-    
-        expect(intern.role).toBe('Role');
-    });
-
     test("add intern's employee id", () => {
-        const intern = new Intern('Name', 'Role', 1, 'email@email.com', 'School');
+        const intern = new Intern('Name', 1, 'email@email.com', 'School');
 
         expect(intern.id).toEqual(expect.any(Number));
     });
 
     test("add intern's email", () => {
-        const intern = new Intern('Name', 'Role', 1, 'email@email.com', 'School');
+        const intern = new Intern('Name', 1, 'email@email.com', 'School');
     
         expect(intern.email).toBe('email@email.com');
     });
 
     test('add the name of the school the intern attended', () => {
-        const intern = new Intern('Name', 'Role', 1, 'email@email.com', 'School');
+        const intern = new Intern('Name', 1, 'email@email.com', 'School');
     
         expect(intern.school).toBe('School');
     });
