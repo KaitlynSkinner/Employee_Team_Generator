@@ -8,8 +8,11 @@ header {
 /* Float four columns side by side */
 .column {
   float: left;
-  width: 25%;
+  width: 30%;
   padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
@@ -24,10 +27,20 @@ header {
 
 /* Style the counter cards */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
-  background-color: #f1f1f1;
-  word-wrap: break-word;
+  word-wrap: break-word; 
+  --bg-filter-opacity: 0.5;
+  height: 20em;
+  width: 15em;
+  border-radius: 1em;
+  padding: 1em;
+  display: flex;
+  background-size: cover;
+  box-shadow: 0 0 5em -1em black;
+  transition: all, var(--transition-time);
+  justify-content: center;
+  overflow: hidden;
+  border: 10px solid #ccc;
+  text-decoration: none;
 }
 
 .card-section {
@@ -44,4 +57,10 @@ header {
 
 #m-t {
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 575px) {
+  .menu {
+    font-size: 10px;
+  }
 }
