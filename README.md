@@ -26,7 +26,11 @@ As a manager, I want to generate a webpage that displays my team's basic info in
 
 ## Usage
  Once installed, type "node index" to begin creating your Team Profile Webpage. There will be a series of instructional prompts to answer. For the best result, attentively read the prompts and provide as much detail as you desire. Lastly, open index.html within the dist folder to view your completed file!
+ **Deployed Application**
   [![Watch the video](https://img.youtube.com/vi/vLUKuyUaj7Q/0.jpg)](https://www.youtube.com/watch?v=vLUKuyUaj7Q)
+  **Tests**
+  [![Tests Video](https://img.youtube.com/vi/sGmoKTjK-iU/0.jpg)](https://www.youtube.com/watch?v=sGmoKTjK-iU)
+  **Mockup**
   ![Deployed Application](https://github.com/KaitlynSkinner/Employee_Team_Generator/blob/a1e14c57c657bb3536f856ab9b444a74f38b8c38/dist/images/Mockup.html.png?raw=true)
 
 ## License
