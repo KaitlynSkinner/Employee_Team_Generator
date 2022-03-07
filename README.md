@@ -1,7 +1,7 @@
 # Employee_Team_Generator
 
 ## Description
-a Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.
+A Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.
 
 ## User Story
 As a manager, I want to generate a webpage that displays my team's basic info in order to have quick access to their emails and GitHub profiles.
@@ -10,7 +10,7 @@ As a manager, I want to generate a webpage that displays my team's basic info in
   * [Features](#features)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [License] (#license)
+  * [License](#license)
   * [Credits](#credits)
   * [How to Contribute](#howtocontribute)
   * [Tests](#tests)
@@ -24,8 +24,8 @@ As a manager, I want to generate a webpage that displays my team's basic info in
 
 ## Usage
  Once installed, type "node index" to begin creating your Team Profile Webpage. There will be a series of instructional prompts to answer. For the best result, attentively read the prompts and provide as much detail as you desire. Lastly, open index.html within the dist folder to view your completed file!
-  [![Watch the video](https://img.youtube.com/vi/v=vLUKuyUaj7Q/0.jpg)](https://www.youtube.com/watch?vv=vLUKuyUaj7Q)
-  ![Deployed Application](https://github.com/KaitlynSkinner/README_Generator/blob/da47d8120e21322c46e09ad64d0883add73bf3de/images/Mock-up.md.png?raw=true)
+  [![Watch the video](https://img.youtube.com/vi/v=vLUKuyUaj7Q/0.jpg)](https://www.youtube.com/watch?v=vLUKuyUaj7Q)
+  ![Deployed Application](https://github.com/KaitlynSkinner/Employee_Team_Generator/blob/a1e14c57c657bb3536f856ab9b444a74f38b8c38/dist/images/Mockup.html.png?raw=true)
 
 ## License
 The content of this application itself is not licensed.
