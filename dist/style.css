@@ -26,8 +26,20 @@ header {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
-  text-align: center;
   background-color: #f1f1f1;
+  word-wrap: break-word;
+}
+
+.card-section {
+  text-align: center;
+  background-color: blue;
+  color: white;
+}
+
+.menu {
+  font-size: smaller;
+  word-wrap: break-word;
+  flex-wrap: wrap;
 }
 
 #m-t {

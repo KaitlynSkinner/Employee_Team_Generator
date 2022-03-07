@@ -60,7 +60,7 @@ const teamGeneratorQuestions = () => {
         {
             type: 'input',
             name: 'managerEmail',
-            message: 'What is the name of the team managers email?',
+            message: 'What is the email address of the team manager?',
             validate: managerEmailInput => {
                 if (managerEmailInput) {
                     return true;

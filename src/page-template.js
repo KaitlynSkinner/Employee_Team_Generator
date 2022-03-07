@@ -1,5 +1,4 @@
-const generateManagers = (managers) => {
-    let managerTemplate = managers.map(manager => {
+const generateManager = (manager) => {
         return `
         <!-- Team Cards -->
         <div id="m-t" class="column">
@@ -11,16 +10,13 @@ const generateManagers = (managers) => {
             <div class="card-divider">
                 <ul class="menu">
                     <li>Employee ID:<span>${manager.id}</span></li>
-                    <li>Email:<span>${manager.email}</span></li>
-                    <li>GitHub Username:<span>${manager.officeNumber}</span></li>
+                    <li>Email:<a href="${manager.email}">${manager.email}</a></li>
+                    <li>Office Number:<span>${manager.officeNumber}</span></li>
                 </ul>
             </div>
             </div>
         </div>
         `;
-    })
-    console.log(managerTemplate);
-    return managerTemplate.join("");
 }
 
 const generateEngineers = (engineers) => {
@@ -36,7 +32,7 @@ const generateEngineers = (engineers) => {
             <div class="card-divider">
                 <ul class="menu">
                     <li>Employee ID:<span>${engineer.id}</span></li>
-                    <li>Email:<span>${engineer.email}</span></li>
+                    <li>Email:<a href="${engineer.email}">${engineer.email}</a></li>
                     <li>GitHub Username:<span>${engineer.github}</span></li>
                 </ul>
             </div>
@@ -59,21 +55,21 @@ const generateInterns = (interns) => {
                 <p>${intern.getRole()}</p>
             </div>
             <div class="card-divider">
-                <ul class="menu">
-                    <li>Employee ID:<span>${intern.id}</span></li>
-                    <li>Email:<span>${intern.email}</span></li>
-                    <li>GitHub Username:<span>${intern.school}</span></li>
+                <ul class="vertical menu align-left">
+                    <li class="is-active">Employee ID:<span>${intern.id}</span></li>
+                    <li class="is-active">Email:<a href="${intern.email}">${intern.email}</a></li>
+                    <li class="is-active">GitHub Username:<span>${intern.school}</span></li>
                 </ul>
             </div>
             </div>
         </div>
         `;
     })
-    console.log(internTamplate);
+    console.log(internTemplate);
     return internTemplate.join("");
 }
 
-const generateHtml = (managers, engineers, interns) => {
+const generateHtml = (manager, engineers, interns) => {
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -90,11 +86,11 @@ const generateHtml = (managers, engineers, interns) => {
         
         <!-- Generate The Page  -->
         <header>
-    
+            <h1>My Team</h1>
         </header>
     
         <main>
-            ${generateManagers(managers)}
+            ${generateManager(manager)}
             ${generateEngineers(engineers)}
             ${generateInterns(interns)}
         </main>
