@@ -101,8 +101,6 @@ const generateHtml = (managers, engineers, interns) => {
     
     <!-- Compressed Foundation JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
-    <!-- <script src="js/app.js"></script> -->
-    <script src="./js/script.js"></script>
     </body>
     </html>
     `;

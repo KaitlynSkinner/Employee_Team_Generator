@@ -13,20 +13,26 @@ describe('get the information of the team employee', () => {
     });
 
     test('get employee name', () => {
-        const employee = new Employee('Name', 1, 'email@email.com', 'role');
+        const employee = new Employee('Name', 1, 'email@email.com');
     
         expect(employee.name).toBe('Name');
     });
 
     test('get employee employee id', () => {
-        const employee = new Employee('Name', 1, 'email@email.com', 'role');
+        const employee = new Employee('Name', 1, 'email@email.com');
 
         expect(employee.id).toEqual(expect.any(Number));
     });
 
     test('get employee email', () => {
-        const employee = new Employee('Name', 1, 'email@email.com', 2);
+        const employee = new Employee('Name', 1, 'email@email.com');
     
         expect(employee.email).toBe('email@email.com');
+    });
+
+    test('get employee role', () => {
+        const employee = new Employee('Name', 1, "email@email.com");
+
+        expect(employee.getRole()).toEqual('employee');
     });
 });

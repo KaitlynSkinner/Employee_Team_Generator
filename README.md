@@ -35,7 +35,7 @@ The application does not have any collaborators at this time.
 This application is not open to contributors at this time.
 
 ## Tests
-
+Run npm test to run Jest for tests.
 
 ## Questions
 If you have any questions please feel free to contact me.
